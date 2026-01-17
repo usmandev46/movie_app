@@ -1,11 +1,9 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-
 class TMDBEndpoints {
   static const String baseUrl = "https://api.themoviedb.org/3";
-  static final String apiKey = dotenv.env['TMDB_API_KEY'] ?? "";
-  static final String language = dotenv.env['TMDB_LANGUAGE'] ?? "en-US";
+  static const String apiKey = "8fdf0c121fc212884a2a2e7eb9e9c753";
+  static const String language = "en-US";
 
-  static  String movieList =
+  static const String movieList =
       "$baseUrl/movie/upcoming"
       "?api_key=$apiKey"
       "&language=$language"

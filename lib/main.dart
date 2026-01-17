@@ -12,9 +12,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'core/constants/colors.dart';
 import 'core/utils/size_config.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: ".env");
+void main() {
   runApp(
     MultiProvider(
       providers: [
